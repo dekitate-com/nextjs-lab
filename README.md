@@ -1,3 +1,10 @@
+# セットアップ
+```bash
+mise install
+```
+https://mise.jdx.dev/getting-started.html
+
+
 # nextjs-lab
 
 To install dependencies:
