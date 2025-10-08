@@ -1,19 +1,19 @@
-import type { Metadata } from 'next'
-import { ReactNode } from 'react'
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: 'Next.js App',
-  description: 'Next.js with TypeScript and Bun',
-}
+	title: "Next.js App",
+	description: "Next.js with TypeScript and Bun",
+};
 
 interface RootLayoutProps {
-  children: ReactNode
+	children: ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <html lang="ja">
-      <body>{children}</body>
-    </html>
-  )
+	return (
+		<html lang="ja">
+			<body>{children}</body>
+		</html>
+	);
 }
