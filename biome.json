@@ -1,0 +1,71 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "linter": {
+    "domains": {
+      "react": "recommended"
+    },
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "useSimplifiedLogicExpression": "error"
+      },
+      "correctness": {
+        "noGlobalDirnameFilename": {
+          "level": "warn",
+          "fix": "unsafe"
+        },
+        "noProcessGlobal": {
+          "level": "warn",
+          "fix": "unsafe"
+        },
+        "noUndeclaredDependencies": "warn",
+        "noNestedComponentDefinitions": "warn",
+        "useUniqueElementIds": "warn"
+      },
+      "performance": {
+        "noDelete": "warn"
+      },
+      "style": {
+        "noCommonJs": "warn",
+        "noEnum": "warn",
+        "noMagicNumbers": "info",
+        "noNegationElse": "warn",
+        "noNestedTernary": "warn",
+        "noProcessEnv": "error",
+        "noUnusedTemplateLiteral": "warn",
+        "noUselessElse": "error",
+        "noYodaExpression": "error",
+        "useAsConstAssertion": "info",
+        "useAtIndex": "info",
+        "useBlockStatements": "warn",
+        "useCollapsedElseIf": "error",
+        "useCollapsedIf": "error",
+        "useConsistentArrayType": "warn",
+        "useConsistentBuiltinInstantiation": "warn",
+        "useDefaultParameterLast": "warn",
+        "useDefaultSwitchClause": "warn",
+        "useExplicitLengthCheck": "warn",
+        "useNumericSeparators": "warn",
+        "useObjectSpread": "warn",
+        "useSingleVarDeclarator": "warn",
+        "useUnifiedTypeSignatures": "warn"
+      },
+      "suspicious": {
+        "noConsole": "error",
+        "noEmptyBlockStatements": "error",
+        "noUnassignedVariables": "warn",
+        "noVar": "error",
+        "useErrorMessage": "warn"
+      },
+      "nursery": {
+        "useReactFunctionComponents": "error"
+      }
+    }
+  }
+}
+
