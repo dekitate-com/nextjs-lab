@@ -2,29 +2,34 @@
 	"name": "nextjs-lab",
 	"version": "1.0.0",
 	"main": "index.js",
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "biome lint",
-		"format": "biome format --write"
-	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"description": "",
-	"devDependencies": {
-		"@biomejs/biome": "2.2.5",
-		"@types/node": "24.3.1",
-		"@types/react": "19.1.12",
-		"@types/react-dom": "19.1.9"
-	},
-	"peerDependencies": {
-		"typescript": "5.9.2"
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "biome check",
+		"format": "biome format --write"
 	},
 	"dependencies": {
 		"next": "15.5.2",
 		"react": "19.1.1",
 		"react-dom": "19.1.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.5",
+		"@types/node": "24.3.1",
+		"@types/react": "19.1.12",
+		"@types/react-dom": "19.1.9",
+		"@commitlint/cli": "19.5.0",
+		"@commitlint/config-conventional": "19.5.0",
+		"@commitlint/types": "19.5.0",
+		"lefthook": "1.7.6",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"typescript": "5.9.2"
 	}
 }
