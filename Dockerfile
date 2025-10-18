@@ -1,5 +1,5 @@
 # --- Runtime image ---
-FROM node:20-alpine AS runner
+FROM node:24.10.0 AS runner
 WORKDIR /app
 ENV NODE_ENV=production \
     PORT=3000 \
