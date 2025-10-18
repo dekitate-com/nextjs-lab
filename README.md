@@ -3,20 +3,28 @@
 mise install
 ```
 https://mise.jdx.dev/getting-started.html
-
+pckage manager と nodejs がインストールされます。
 
 # nextjs-lab
-
-To install dependencies:
-
+## 依存関係をインストールする
 ```bash
 bun install
 ```
 
-To run:
-
+## 開発サーバーを立ち上げる
 ```bash
-bun run index.js
+bun run dev
 ```
 
-This project was created using `bun init` in bun v1.1.38. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## 本番に近い環境を Docker で再現する
+まずはビルドする
+```bash
+bun run build
+```
+
+次にDockerイメージを作成
+```bash
+docker build -t myapp .
+```
+
+コンテナを立ち上げて localhost:3000 にアクセス！
