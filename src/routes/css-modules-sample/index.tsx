@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./styles.module.css";
 
 const features = [
 	{
@@ -18,7 +18,7 @@ const features = [
 	},
 ];
 
-export default function CssModulesSamplePage() {
+export const Page = () => {
 	return (
 		<main className={styles.container}>
 			<section className={styles.hero}>
@@ -66,4 +66,4 @@ export default function CssModulesSamplePage() {
 			</p>
 		</main>
 	);
-}
+};
